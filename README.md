@@ -1,2 +1,2 @@
-# gamejam_nomingwon
-dy_gamejam
+# 노민권_게임잼
+2학년 노민권
