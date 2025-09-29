@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - katana
+  - wall
+  - missile_trigger
+  - bomb
   layers:
   - Default
   - TransparentFX
