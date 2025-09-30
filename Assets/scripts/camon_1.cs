@@ -8,6 +8,8 @@ public class camon_1 : MonoBehaviour
     public GameObject dynamite_triple_right;
     public GameObject barrel_right;
 
+    public GameObject effect;
+
     [Header("Spawn Settings")]
     public float spawnInterval = 1f;
 
@@ -24,10 +26,16 @@ public class camon_1 : MonoBehaviour
             Spawn(elapsed);
             timer = 0f;
         }
+
+    }
+    private void Start()
+    {
+        effect.SetActive(false);
     }
 
     void Spawn(float t)
     {
+        effect.SetActive(true);
         // 0~30√  : bomb∏∏
         if (t < 30f)
         {
@@ -55,5 +63,6 @@ public class camon_1 : MonoBehaviour
             else if (r < 0.75f) Instantiate(dynamite_triple_right, transform.position, Quaternion.identity);
             else Instantiate(barrel_right, transform.position, Quaternion.identity);
         }
+        effect.SetActive(false);
     }
 }

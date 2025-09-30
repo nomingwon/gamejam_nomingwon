@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7029761086570891476}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: -13.233999, y: 1.22, z: 2.5355182}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3add8d2fc2c52f479356166f4eb769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effectBombPrefab: {fileID: 4573267843196910486, guid: e6b5f0d0181461f46b61c8d251e38518, type: 3}
+  destroyedBombPrefab: {fileID: 1128952519439594122, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+  effectExtraLife: 0.1
 --- !u!54 &1230885298988517867
 Rigidbody:
   m_ObjectHideFlags: 0

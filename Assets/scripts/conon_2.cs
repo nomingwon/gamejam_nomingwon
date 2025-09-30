@@ -7,6 +7,8 @@ public class canon_2 : MonoBehaviour
     public GameObject dynamite_left;
     public GameObject dynamite_triple_left;
     public GameObject barrel_left;
+    public GameObject effect;
+
 
     [Header("Spawn Settings")]
     public float spawnInterval = 1f;
@@ -14,6 +16,10 @@ public class canon_2 : MonoBehaviour
     private float timer;
     private float elapsed;   // 게임 시작 후 누적 시간
 
+    private void Start()
+    {
+        effect.SetActive(false);
+    }
     void Update()
     {
         elapsed += Time.deltaTime;
@@ -28,6 +34,7 @@ public class canon_2 : MonoBehaviour
 
     void Spawn(float t)
     {
+        effect.SetActive(true);
         // 0~30초 : bomb만
         if (t < 30f)
         {
@@ -55,5 +62,6 @@ public class canon_2 : MonoBehaviour
             else if (r < 0.75f) Instantiate(dynamite_triple_left, transform.position, Quaternion.identity);
             else Instantiate(barrel_left, transform.position, Quaternion.identity);
         }
+        effect.SetActive(false);
     }
 }

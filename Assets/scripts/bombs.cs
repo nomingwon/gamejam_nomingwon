@@ -4,6 +4,7 @@ public class bombs : MonoBehaviour
 {
     public float speed = 10f;   // 발사 속도
     public bool goRight = true; // true면 +X, false면 -X
+    public GameObject bomb_effect;
 
     void Start()
     {
@@ -15,18 +16,11 @@ public class bombs : MonoBehaviour
 
         Vector3 dir = goRight ? Vector3.right : Vector3.left;
         rb.AddForce(dir * speed, ForceMode.Impulse);
+
+        bomb_effect.SetActive(false);
     }
 
-    // 3D 충돌(비-트리거)
-    private void OnCollisionEnter(Collision other)
-    {
-        Debug.Log("asdfhadkfkzsfhselaofjepdo");
-        if (other.gameObject.CompareTag("katana"))
-        {
-
-            Destroy(gameObject, 0.01f);
-        }
-    }
+    
 
     // 3D 트리거
     private void OnTriggerEnter(Collider other)
@@ -34,8 +28,9 @@ public class bombs : MonoBehaviour
 
         if (other.gameObject.CompareTag("katana")||other.gameObject.CompareTag("wall"))
         {
-
-            Destroy(gameObject, 0.01f);
+            bomb_effect.SetActive(true);
+            Destroy(gameObject, 0.1f);
+            
         }
     }
 }
