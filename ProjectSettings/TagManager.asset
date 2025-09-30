@@ -8,14 +8,16 @@ TagManager:
   - wall
   - missile_trigger
   - bomb
+  - missile
+  - explosion
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - mamager
   - Water
   - UI
-  - 
+  - player
   - 
   - 
   - 

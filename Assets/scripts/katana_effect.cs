@@ -11,7 +11,7 @@ public class katana_effect : MonoBehaviour
 
     public void on_effect()
     {
-        Debug.Log("asdkfhaskdfhj");
+       
         effect.SetActive(true);
         
     }

@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectBombPrefab: {fileID: 4573267843196910486, guid: e6b5f0d0181461f46b61c8d251e38518, type: 3}
   destroyedBombPrefab: {fileID: 1128952519439594122, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
-  effectExtraLife: 0.1
+  effectExtraLife: 0.07
 --- !u!54 &1230885298988517867
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 692441840802825824}
   m_Layer: 0
   m_Name: BigExplosion (1)
-  m_TagString: Untagged
+  m_TagString: explosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9859,7 +9859,7 @@ GameObject:
   - component: {fileID: 8970342271571205838}
   m_Layer: 0
   m_Name: Light
-  m_TagString: Untagged
+  m_TagString: explosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

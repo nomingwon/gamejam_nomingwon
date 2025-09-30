@@ -155,6 +155,8 @@ MonoBehaviour:
   speed: 5
   goRight: 1
   bomb_effect: {fileID: 3199082160038264932}
+  ps: 0.2
+  ms: 2
 --- !u!1001 &2580479108108808942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,6 +168,42 @@ PrefabInstance:
     - target: {fileID: 1128952519439594122, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
       propertyPath: m_Name
       value: BigExplosion (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128952519439594122, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698000887423022494, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.37789893
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698000887423022494, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.32647085
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698000887423022494, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_Size.z
+      value: 0.34476334
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698000887423022494, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_Center.x
+      value: 0.00533811
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698000887423022494, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_Center.y
+      value: 0.011280417
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698000887423022494, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_Center.z
+      value: -0.00608474
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698000887423022494, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6391457917075284698, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8167102728465506741, guid: 9d26debe3a5f6ca46b1b51df6e03622e, type: 3}
       propertyPath: m_LocalScale.x

@@ -9,6 +9,9 @@ public class player_anime : MonoBehaviour
     [Header("Jump Settings")]
     public float jumpForce = 7f;   // ? ���� ��
 
+
+    
+
     void Start()
     {
         anime = GetComponent<Animator>();
@@ -23,7 +26,12 @@ public class player_anime : MonoBehaviour
         {
             turn();
         }
-        katana_collider();
+        else if(is_attack)
+        {
+            anime.ResetTrigger("attack1");
+            //anime.ResetTrigger("attack2");
+        }
+            katana_collider();
     }
 
     public void attack()
@@ -110,8 +118,10 @@ public class player_anime : MonoBehaviour
     {
         is_attack = false;
     }
- 
+
     
+
+
 
     public void katana_collider()
     {
