@@ -14,21 +14,11 @@ public class fighter : MonoBehaviour
             rb = gameObject.AddComponent<Rigidbody>();
         }
 
-        
         rb.isKinematic = false; 
-
         
         Vector3 dir = Vector3.forward;
         rb.AddForce(dir * speed, ForceMode.Impulse);
     }
-    void Update()
-    {
-       
-    }
-   
-
-    
-    
     private void OnTriggerEnter(Collider other)
     {
         

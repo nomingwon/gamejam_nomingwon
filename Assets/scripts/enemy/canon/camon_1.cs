@@ -70,5 +70,7 @@ public class camon_1 : MonoBehaviour
             else if (r < 0.75f) Instantiate(dynamite_triple_right, transform.position, Quaternion.identity);
             else Instantiate(barrel_right, transform.position, Quaternion.identity);
         }
+
+        
     }
 }

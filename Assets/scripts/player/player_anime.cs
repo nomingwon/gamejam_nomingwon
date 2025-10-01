@@ -3,11 +3,10 @@ using UnityEngine;
 public class player_anime : MonoBehaviour
 {
     public Animator anime;
-    public Rigidbody rb;           // ? ������ Rigidbody
+    public Rigidbody rb;           
     public bool is_attack = false;
-    public GameObject targetPrefab;   // 인스펙터에서 프리팹 인스턴스(씬 상 오브젝트) 지정
-    [Header("Jump Settings")]
-    public float jumpForce = 7f;   // ? ���� ��
+    public GameObject targetPrefab;   
+    public float jumpForce = 7f;   
 
 
     
@@ -37,43 +36,29 @@ public class player_anime : MonoBehaviour
     public void attack()
     {
         var st = anime.GetCurrentAnimatorStateInfo(0);
-        
-        
-        
-
-        
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
             anime.SetTrigger("attack1");
-
-            
             if(st.IsName("attack1") && Input.GetKeyDown(KeyCode.Space))
             {
                 anime.ResetTrigger("attack1");
                 anime.SetTrigger("attack2");
             }
-            
-
             else if (st.IsName("attack2") && Input.GetKeyDown(KeyCode.Space))
             {
                 anime.ResetTrigger("attack2");
                 anime.SetTrigger("attack1");
             }
-
             else if (st.IsName("attack1") && Input.GetKeyDown(KeyCode.W))
             {
                 anime.ResetTrigger("attack1");
                 anime.SetTrigger("jump_attack");
             }
-
             else if (st.IsName("UpperAttack") && Input.GetKeyDown(KeyCode.Space))
             {
                 anime.ResetTrigger("jump_attack");
                 anime.SetTrigger("attack1");
             }
-
-            
         }
 
         
