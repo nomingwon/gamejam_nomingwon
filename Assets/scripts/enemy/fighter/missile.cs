@@ -32,11 +32,11 @@ public class missile : MonoBehaviour
             Instantiate(missile_3, transform.position, Quaternion.identity);
         }
 
-        // 한 번만 떨어지도록 초기화
+       
         drop_missile = false;
     }
 
-    private void OnTriggerEnter(Collider other)    // ✅ Collider 대문자
+    private void OnTriggerEnter(Collider other)    
     {
         if (other.CompareTag("missile_trigger"))
         {
