@@ -133,7 +133,7 @@ MonoBehaviour:
   goRight: 1
   bomb_effect: {fileID: 1288496001820240883}
   ps: 0.7
-  ms: 7
+  ms: 9
 --- !u!136 &2516198720627517254
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -76,7 +76,7 @@ MonoBehaviour:
   goRight: 0
   bomb_effect: {fileID: 3946467305402209791}
   ps: 5
-  ms: 10
+  ms: 12
 --- !u!54 &155130567020372584
 Rigidbody:
   m_ObjectHideFlags: 0

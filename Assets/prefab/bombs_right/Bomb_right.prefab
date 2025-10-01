@@ -155,7 +155,8 @@ MonoBehaviour:
   speed: 5
   goRight: 0
   bomb_effect: {fileID: 8185621345752666439}
-  score: 1
+  ps: 1
+  ms: 4
 --- !u!1001 &9093879715123160013
 PrefabInstance:
   m_ObjectHideFlags: 0
