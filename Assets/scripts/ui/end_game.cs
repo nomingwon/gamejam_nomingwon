@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class end_game : MonoBehaviour
 {
     public GameObject gameOverCanvas; 
-
+   
     private void Start()
     {
         gameOverCanvas.SetActive(false); 
@@ -24,4 +24,8 @@ public class end_game : MonoBehaviour
         Time.timeScale = 1f; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
+    
+
+    
+
 }
