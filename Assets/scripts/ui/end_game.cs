@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class end_game : MonoBehaviour
 {
-    public GameObject gameOverCanvas; 
-   
+    public GameObject gameOverCanvas;
+    [SerializeField] private string gameSceneName = "first";
     private void Start()
     {
         gameOverCanvas.SetActive(false); 
@@ -24,8 +24,11 @@ public class end_game : MonoBehaviour
         Time.timeScale = 1f; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
-    
 
-    
+
+    public void returntomanu()
+    {
+        SceneManager.LoadScene(gameSceneName);
+    }
 
 }
